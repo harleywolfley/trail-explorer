@@ -1,0 +1,110 @@
+[
+  {
+    "id": "trail01",
+    "name": "Table Rock Trail",
+    "location": "Boise, ID",
+    "distance": 3.7,
+    "difficulty": "Moderate",
+    "description": "A popular trail with great views of the city.",
+    "image": "images/tablerock.jpg"
+  },
+  {
+    "id": "trail02",
+    "name": "Camelback Mountain Trail",
+    "location": "Phoenix, AZ",
+    "distance": 2.4,
+    "difficulty": "Hard",
+    "description": "A steep, rocky climb rewarded with sweeping desert views.",
+    "image": "images/camelback.jpg"
+  },
+  {
+    "id": "trail03",
+    "name": "Angel's Rest Trail",
+    "location": "Columbia River Gorge, OR",
+    "distance": 4.8,
+    "difficulty": "Moderate",
+    "description": "A forested climb leading to a stunning overlook of the gorge.",
+    "image": "images/angelsrest.jpg"
+  },
+  {
+    "id": "trail04",
+    "name": "Emerald Lake Trail",
+    "location": "Rocky Mountain National Park, CO",
+    "distance": 3.6,
+    "difficulty": "Easy",
+    "description": "A scenic lakeside hike passing several alpine lakes.",
+    "image": "images/emeraldlake.jpg"
+  },
+  {
+    "id": "trail05",
+    "name": "Mist Trail",
+    "location": "Yosemite National Park, CA",
+    "distance": 8.0,
+    "difficulty": "Hard",
+    "description": "An iconic trail past waterfalls with breathtaking valley views.",
+    "image": "images/misttrail.jpg"
+  },
+  {
+    "id": "trail06",
+    "name": "Old Rag Mountain Trail",
+    "location": "Shenandoah National Park, VA",
+    "distance": 9.1,
+    "difficulty": "Hard",
+    "description": "A challenging rock scramble with panoramic mountain views.",
+    "image": "images/oldrag.jpg"
+  },
+  {
+    "id": "trail07",
+    "name": "Bridal Veil Falls Trail",
+    "location": "Telluride, CO",
+    "distance": 3.2,
+    "difficulty": "Moderate",
+    "description": "A rugged trail leading to Colorado's tallest free-falling waterfall.",
+    "image": "images/bridalveil.jpg"
+  },
+  {
+    "id": "trail08",
+    "name": "Skyline to the Sea Trail",
+    "location": "Santa Cruz Mountains, CA",
+    "distance": 30.0,
+    "difficulty": "Hard",
+    "description": "A long redwood forest trek stretching from the mountains to the coast.",
+    "image": "images/skylinetosea.jpg"
+  },
+  {
+    "id": "trail09",
+    "name": "Manitou Incline",
+    "location": "Manitou Springs, CO",
+    "distance": 1.0,
+    "difficulty": "Hard",
+    "description": "A steep former railway incline offering an intense cardio workout.",
+    "image": "images/manitouincline.jpg"
+  },
+  {
+    "id": "trail10",
+    "name": "Bear Mountain Loop",
+    "location": "Bear Mountain State Park, NY",
+    "distance": 4.2,
+    "difficulty": "Moderate",
+    "description": "A forested loop trail with views of the Hudson River valley.",
+    "image": "images/bearmountain.jpg"
+  },
+  {
+    "id": "trail11",
+    "name": "Zion Narrows Trail",
+    "location": "Zion National Park, UT",
+    "distance": 9.4,
+    "difficulty": "Hard",
+    "description": "A unique river hike through towering sandstone canyon walls.",
+    "image": "images/zionnarrows.jpg"
+  },
+  {
+    "id": "trail12",
+    "name": "Lost Lake Trail",
+    "location": "Mount Hood National Forest, OR",
+    "distance": 3.0,
+    "difficulty": "Easy",
+    "description": "An easygoing loop around a calm lake with mountain reflections.",
+    "image": "images/lostlake.jpg"
+  }
+]
