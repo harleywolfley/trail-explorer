@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #f5c3b6;
+    --secondary-color: #e0907c;
+    --accent-color: #b4e1fe;
+    --background-color: #f4e3df;
+    --text-color: #4e3b34;
+
+    --logo-font: "Corinthia", cursive;
+    --header-font: "Elms Sans", serif;
+    --para-font: Sans;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: var(--text-color);
+}
+
+#logo {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+#logo h1, #logo h3 {
+    margin: 0;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#logo h1 {
+    font-size: 3em;
+    font-family: var(--logo-font);
+}
+
+#logo h3 {
+    font-size: 1em;
+    font-family: var(--header-font);
+}
+
+header nav button {
+    float: right;
+    color: var(--primary-color);
+    background-color: var(--text-color);
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+
+header nav ul {
+    float: right;
+    display: none;
+}
+
+main {
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+article {
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+}
+
+article img {
+    width: 90%;
+    padding: 5%;
+}
+
+p {
+    font-family: var(--para-font);
+    margin: 0;
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+footer p {
+    font-family: var(--header-font);
+}
+
+footer a {
+    /* add styles to make this disappear visually, but able to tab into */
+}
+
+@media screen and (min-width: 500px) {
+
+}
