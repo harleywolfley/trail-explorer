@@ -7,8 +7,9 @@
     --background-color: #f4e3df;
     --text-color: #4e3b34;
 
-    --header-font: "Corinthia", cursive;
-    --para-font: "Elms Sans", serif;
+    --logo-font: "Corinthia", cursive;
+    --header-font: "Elms Sans", serif;
+    --para-font: Sans;
 }
 
 * {
@@ -30,7 +31,11 @@ header {
     padding: 2%;
 }
 
-h1, h3 {
+h1 {
+    font-family: var(--logo-font);
+}
+
+h3 {
     font-family: var(--header-font);
 }
 
