@@ -2,7 +2,7 @@ const trailsCard = document.getElementById("trail-card");
 
 async function loadTrails() {
     try {
-        const response = await fetch('/src/data/trails.json');
+        const response = await fetch('./data/trails.json');
         if (!response.ok) {
             throw new Error(`Data fetch error, status: ${response.status}`);
         }
