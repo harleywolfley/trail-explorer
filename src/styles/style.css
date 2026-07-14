@@ -82,6 +82,7 @@ article img {
 
 p {
     font-family: var(--para-font);
+    color: var(--text-color);
     margin: 0;
     padding: 20px;
 }
