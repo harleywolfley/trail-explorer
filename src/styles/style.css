@@ -158,9 +158,11 @@ main {
 
 article {
     background-color: var(--primary-color);
-    margin: 0 auto;
+    margin: 0 1.5rem;
     padding: 1.25rem;
-    width: min(90%, 900px);
+    width: auto;
+    max-width: 900px;
+    box-sizing: border-box;
     border-radius: 1rem;
     box-shadow: 0 8px 20px rgba(78, 59, 52, 0.12);
 }
@@ -465,6 +467,7 @@ footer a:focus {
         gap: 1.5rem;
         align-items: start;
         padding: 1.5rem;
+        margin: 0 auto;
     }
 
     article img {
