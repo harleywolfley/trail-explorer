@@ -6,7 +6,7 @@
     "distance": 3.7,
     "difficulty": "Moderate",
     "description": "A popular trail with great views of the city.",
-    "image": "images/tablerock.jpg"
+    "image": "./images/table-rock.png"
   },
   {
     "id": "trail02",
@@ -15,7 +15,7 @@
     "distance": 2.4,
     "difficulty": "Hard",
     "description": "A steep, rocky climb rewarded with sweeping desert views.",
-    "image": "images/camelback.jpg"
+    "image": "./images/camelback-mtn.png"
   },
   {
     "id": "trail03",
@@ -24,7 +24,7 @@
     "distance": 4.8,
     "difficulty": "Moderate",
     "description": "A forested climb leading to a stunning overlook of the gorge.",
-    "image": "images/angelsrest.jpg"
+    "image": "images/angels-rest.png"
   },
   {
     "id": "trail04",
@@ -33,7 +33,7 @@
     "distance": 3.6,
     "difficulty": "Easy",
     "description": "A scenic lakeside hike passing several alpine lakes.",
-    "image": "images/emeraldlake.jpg"
+    "image": "./images/emerald-lake.png"
   },
   {
     "id": "trail05",
@@ -42,7 +42,7 @@
     "distance": 8.0,
     "difficulty": "Hard",
     "description": "An iconic trail past waterfalls with breathtaking valley views.",
-    "image": "images/misttrail.jpg"
+    "image": "./images/mist.png"
   },
   {
     "id": "trail06",
@@ -51,7 +51,7 @@
     "distance": 9.1,
     "difficulty": "Hard",
     "description": "A challenging rock scramble with panoramic mountain views.",
-    "image": "images/oldrag.jpg"
+    "image": "./images/oldrag.png"
   },
   {
     "id": "trail07",
@@ -60,7 +60,7 @@
     "distance": 3.2,
     "difficulty": "Moderate",
     "description": "A rugged trail leading to Colorado's tallest free-falling waterfall.",
-    "image": "images/bridalveil.jpg"
+    "image": "./images/bridalveil.png"
   },
   {
     "id": "trail08",
@@ -69,7 +69,7 @@
     "distance": 30.0,
     "difficulty": "Hard",
     "description": "A long redwood forest trek stretching from the mountains to the coast.",
-    "image": "images/skylinetosea.jpg"
+    "image": "./images/skylinetosea.png"
   },
   {
     "id": "trail09",
@@ -78,7 +78,7 @@
     "distance": 1.0,
     "difficulty": "Hard",
     "description": "A steep former railway incline offering an intense cardio workout.",
-    "image": "images/manitouincline.jpg"
+    "image": "./images/manitouincline.png"
   },
   {
     "id": "trail10",
@@ -87,7 +87,7 @@
     "distance": 4.2,
     "difficulty": "Moderate",
     "description": "A forested loop trail with views of the Hudson River valley.",
-    "image": "images/bearmountain.jpg"
+    "image": "./images/bearmtn.png"
   },
   {
     "id": "trail11",
@@ -96,7 +96,7 @@
     "distance": 9.4,
     "difficulty": "Hard",
     "description": "A unique river hike through towering sandstone canyon walls.",
-    "image": "images/zionnarrows.jpg"
+    "image": "./images/zionnarrows.png"
   },
   {
     "id": "trail12",
@@ -105,6 +105,6 @@
     "distance": 3.0,
     "difficulty": "Easy",
     "description": "An easygoing loop around a calm lake with mountain reflections.",
-    "image": "images/lostlake.jpg"
+    "image": "./images/lostlake.png"
   }
 ]
