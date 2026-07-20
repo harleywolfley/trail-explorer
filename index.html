@@ -11,32 +11,58 @@
   <body>
     <header>
       <section id="logo">
-        <h1>Lovely</h1>
-        <h3>Trail Explorer</h3>
+        <a href="index.html">
+          <h1>Lovely</h1>
+          <h3>Trail Explorer</h3>
+        </a>
       </section>
       <nav>
-        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">&#9776;</button>
-        <ul>
+        <button id="hamburger-btn" aria-expanded="false">&#9776;</button>
+        <ul id="navigation" class="hidden">
           <li><a href="index.html">Home</a></li>
           <li><a href="favorites.html">Favorites</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <img src="lovely-form-modal.png" alt="" id="hero-img">
+      <img src="/images/heroimg.png" alt="placeholder" id="hero-img">
+      <select id="trail-select">
+        <option value="">-- Select a trail --</option>
+      </select>
       <article id="trail-card">
-        <img src="tablerock.jpg" alt="tablerock cartoon image">
-        <h2>Trail Name</h2>
-        <h3>Location</h3>
-        <p>Description</p>
-        <section id="details">
-          <ul>
-            <li>Location</li>
-            <li>distance Miles</li>
-            <li>difficulty</li>
-          </ul>
-        </section>
+        <img src="/images/table-rock.png" alt="table rock">
+        <div id="trail-info">
+          <h2>Trail Name</h2>
+          <h3>Location</h3>
+          <p>Description</p>
+          <section id="details">
+            <ul>
+              <li>Location</li>
+              <li>distance Miles</li>
+              <li>difficulty</li>
+            </ul>
+          </section>
+          <button id="plan-trip-btn" class="plan-trip-btn" type="button">Plan Trip</button>
+        </div>
       </article>
+      <div id="plan-trip-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="plan-trip-title">
+        <div class="modal-card">
+          <button id="close-modal-btn" class="close-modal-btn" type="button" aria-label="Close plan trip form">×</button>
+          <h2 id="plan-trip-title">Plan Your Trip</h2>
+          <form id="trip-form">
+            <label for="trip-name">Name</label>
+            <input id="trip-name" name="name" type="text" required>
+
+            <label for="trip-email">Email</label>
+            <input id="trip-email" name="email" type="email" required>
+
+            <label for="trip-notes">Notes</label>
+            <textarea id="trip-notes" name="notes" rows="4"></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer>
       <p>&copy; Designed by Harley Wolfley Furrows 2026</p>

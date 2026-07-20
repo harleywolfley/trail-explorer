@@ -4,25 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/style.css">
-    <script src="src/scripts/main.js" defer></script>
+    <script type="module" src="/src/scripts/main.js" defer></script>
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Favorites</title>
   </head>
   <body>
     <header>
       <section id="logo">
-        <h1>Lovely</h1>
-        <h3>Trail Explorer</h3>
+        <a href="index.html">
+          <h1>Lovely</h1>
+          <h3>Trail Explorer</h3>
+        </a>
       </section>
       <nav>
-        <ul>
+        <button id="hamburger-btn" aria-expanded="false">&#9776;</button>
+        <ul id="navigation" class="hidden">
           <li><a href="index.html">Home</a></li>
           <li><a href="favorites.html">Favorites</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <img src="lovely-form-modal.png" alt="" id="hero-img">
+      <img src="/images/favoriteshero.png" alt="Favorites hero image" id="hero-img">
+      <!-- <article id="trail-card">
+        <div id="favorites-list"></div>
+      </article> -->
+      <div id="favorites-list"></div>
     </main>
     <footer>
       <p>&copy; Designed by Harley Wolfley Furrows 2026</p>
