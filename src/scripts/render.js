@@ -14,6 +14,7 @@ export function populateDropdown(trails, trailSelect) {
 export function displayTrail(trail, trailsCard, onPlanTrip) {
     currentTrail = trail;
     const { image, name, location, description, distance, difficulty } = trail;
+    const distanceText = (typeof distance === 'number') ? `${distance} Miles` : 'Distance unavailable';
     trailsCard.innerHTML = `
         <img src="${image}" alt="${name}" id="card-img">
         <div id="trail-info">
@@ -62,12 +63,23 @@ function updateFavoriteButtonState() {
 
 export function renderFavorites(favorites, container, onRemove) {
     if (favorites.length === 0) {
-        container.innerHTML = `<p id="no-favorites">You don't have any favorites saved.</p>`;
+        container.innerHTML = `<p id="no-favorites">You haven't saved any favorites yet.</p>`;
         return;
     }
 
     container.innerHTML = favorites.map(trail => {
-        const { id, image, name, location, description, distance, difficulty } = trail;
+        const {
+            id,
+            image = '',
+            name = 'Unknown Trail',
+            location = 'Location unavailable',
+            description = 'No description available.',
+            distance,
+            difficulty = 'Not specified'
+        } = trail;
+
+        const distanceText = (typeof distance === 'number') ? `${distance} Miles` : 'Distance unavailable';
+
         return `
             <article class="favorite-card" data-id="${id}">
                 <img src="${image}" alt="${name}">
@@ -78,7 +90,7 @@ export function renderFavorites(favorites, container, onRemove) {
                     <section class="details">
                         <ul>
                             <li>${location}</li>
-                            <li>${distance} Miles</li>
+                            <li>${distanceText}</li>
                             <li>${difficulty}</li>
                         </ul>
                     </section>
