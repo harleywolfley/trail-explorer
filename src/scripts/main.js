@@ -11,6 +11,65 @@ const planTripModal = document.getElementById("plan-trip-modal");
 const closeModalBtn = document.getElementById("close-modal-btn");
 const tripForm = document.getElementById("trip-form");
 const favoritesList = document.getElementById("favorites-list");
+const NAME_MAX_LENGTH = 40;
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const NAME_REGEX = /^[A-Za-z\s'-]+$/;
+const tripNameInput = document.getElementById('trip-name');
+const tripEmailInput = document.getElementById('trip-email');
+
+function validateName(value) {
+    const nameHint = document.getElementById('name-hint');
+
+    if (value.trim() === '') {
+        nameHint.textContent = 'Name is required.';
+        nameHint.classList.add('error');
+        return false;
+    }
+
+    if (value.length > NAME_MAX_LENGTH) {
+        nameHint.textContent = `Name must be ${NAME_MAX_LENGTH} characters or fewer.`;
+        nameHint.classList.add('error');
+        return false;
+    }
+
+    if (!NAME_REGEX.test(value)) {
+        nameHint.textContent = 'Name can only contain letters, spaces, apostrophes, and hyphens.';
+        nameHint.classList.add('error');
+        return false;
+    }
+
+    nameHint.textContent = 'Up to 40 characters.';
+    nameHint.classList.remove('error');
+    return true;
+}
+
+function validateEmail(value) {
+    const emailHint = document.getElementById('email-hint');
+
+    if (value.trim() === '') {
+        emailHint.textContent = 'Email is required.';
+        emailHint.classList.add('error');
+        return false;
+    }
+
+    if (!EMAIL_REGEX.test(value)) {
+        emailHint.textContent = 'Please enter a valid email address (e.g. name@example.com).';
+        emailHint.classList.add('error');
+        return false;
+    }
+
+    emailHint.textContent = 'e.g. name@example.com';
+    emailHint.classList.remove('error');
+    return true;
+}
+
+if (tripNameInput) {
+    tripNameInput.addEventListener('blur', () => validateName(tripNameInput.value));
+}
+
+if (tripEmailInput) {
+    tripEmailInput.addEventListener('blur', () => validateEmail(tripEmailInput.value));
+}
 
 let trailsData = [];
 
@@ -35,6 +94,13 @@ async function initTrails() {
     if (!trailsCard || !trailSelect) return;
 
     trailsData = await loadTrailsData();
+
+    if (trailsData.length === 0) {
+        trailsCard.innerHTML = `<p id="trail-error">Trail data cannot be loaded at this time (Error 404). Please check back later.</p>`;
+        trailSelect.disabled = true;
+        return;
+    }
+
     getFavorites();
     populateDropdown(trailsData, trailSelect);
 
@@ -80,6 +146,17 @@ if (planTripModal) {
 if (tripForm) {
     tripForm.addEventListener('submit', (event) => {
         event.preventDefault();
+
+        const nameValue = document.getElementById('trip-name').value;
+        const emailValue = document.getElementById('trip-email').value;
+
+        const isNameValid = validateName(nameValue);
+        const isEmailValid = validateEmail(emailValue);
+
+        if (!isNameValid || !isEmailValid) {
+            return;
+        }
+
         closeModal();
         tripForm.reset();
     });

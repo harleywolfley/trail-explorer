@@ -51,10 +51,12 @@
           <h2 id="plan-trip-title">Plan Your Trip</h2>
           <form id="trip-form">
             <label for="trip-name">Name</label>
-            <input id="trip-name" name="name" type="text" required>
+            <input id="trip-name" name="name" type="text" required minlength="1" maxlength="50">
+            <p id="name-hint" class="field-hint">Up to 50 characters.</p>
 
             <label for="trip-email">Email</label>
             <input id="trip-email" name="email" type="email" required>
+            <p id="email-hint" class="field-hint">e.g. name@example.com</p>
 
             <label for="trip-notes">Notes</label>
             <textarea id="trip-notes" name="notes" rows="4"></textarea>

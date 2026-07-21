@@ -130,6 +130,24 @@ main {
     display: block;
 }
 
+#trail-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: var(--header-font);
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(78, 59, 52, 0.12);
+    width: 100%;
+    min-height: 220px;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    grid-column: 1 / -1;
+}
+
 #trail-select {
     display: block;
     width: min(90%, 320px);
@@ -379,6 +397,20 @@ body.modal-open {
     color: var(--text-color);
     font-family: var(--header-font);
     cursor: pointer;
+}
+
+.field-hint {
+    font-family: var(--para-font);
+    font-size: 0.8rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    margin: 0.25rem 0 0;
+}
+
+.field-hint.error {
+    color: #c0392b;
+    opacity: 1;
+    font-weight: 600;
 }
 
 footer {
